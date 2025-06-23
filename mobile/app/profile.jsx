@@ -273,6 +273,20 @@ export default function Profile() {
   <Text style={styles.editProfileButtonText}>Edit Profile</Text>
 </TouchableOpacity>
 
+<TouchableOpacity
+  style={[styles.editProfileButton, { backgroundColor: '#27ae60', marginBottom: 10 }]}
+  onPress={() => router.push('/aiChatbot')}
+>
+  <Text style={styles.editProfileButtonText}>AI Chatbot</Text>
+</TouchableOpacity>
+
+<TouchableOpacity
+  style={[styles.editProfileButton, { backgroundColor: '#e67e22', marginBottom: 25 }]}
+  onPress={() => router.push('/symptomChecker')}
+>
+  <Text style={styles.editProfileButtonText}>Disease Detection</Text>
+</TouchableOpacity>
+
         {/* Farm Details */}
         <View style={styles.detailsContainer}>
           <View style={styles.detailItem}>
