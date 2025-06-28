@@ -49,7 +49,7 @@ export default function EditProfile() {
         params: { farmer: JSON.stringify({ ...farmer, ...formData }) }
       });
     } catch (error) {
-      Alert.alert("Error", error.response?.data?.message || "Failed to update profile");
+      Alert.alert("Error", error.response?.data?.message || "Failed to update profile! Check Your info again!");
     } finally {
       setLoading(false);
     }
